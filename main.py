@@ -13,8 +13,8 @@ import pandas as pd
 import random
 import smtplib
 
-MY_EMAIL = "angusgibsonpython@gmail.com"
-PASSWORD = "zubyeifsrqgirwae"
+MY_EMAIL = os.environ.get("MY_EMAIL")
+PASSWORD = os.environ.get("MY_PASSWORD")
 NOW = dt.datetime.now()
 MONTH = NOW.month
 DAY = NOW.day
